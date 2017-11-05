@@ -122,19 +122,20 @@ gamedll "dlls\hl.dll"
 
 Fields of the file liblist.gam:
 
-game - The name of the mod
-url_info - The mod's informational web site
-url_dl - The ftp site from where the mod can be downloaded
-version - The mod's version number
-size - The size, in bytes, of the mod
-svonly - "1" if the mod is a server only mod ( no client side content or code ), "0" otherwise
-cldll - "1" if the mod requires a matching client.dll
-type - If this mod is "multiplayer_only", then the single player buttons ( New Game/Hazard Course/Load game etc.) are disabled in the Half-Life launcher
-hlversion - The version of Half-Life for which the mod was generated. Revisions to Half-Life will require updates by mod authors.
-nomodels - Set to "1" if model bitmaps should not be shown in the Multiplayer | Customize menu of the Half-Life launcher mpentity:	When a user chooses to create a listen server from the interface, each BSP file in the maps\ folder for the mod is searched. The entity data for the BSP is scanned for the presence of the string identified by mpentity. For instance, in Half-Life, the string is "info_player_deathmatch" ( which is also the default if no string is specified )
-gamedll - The game DLL to load for running a server for this mod.
-startmap - When a user chooses "New Game" for a single player mod, this is the map that is loaded.
-trainmap - When a user chooses "Hazard Course" for a single player mod, this is the map that is loaded.
+* *game* - The name of the mod
+* *url_info* - The mod's informational web site
+* *url_dl* - The ftp site from where the mod can be downloaded* 
+* *version* - The mod's version number
+* *size* - The size, in bytes, of the mod
+* *svonly* - "1" if the mod is a server only mod ( no client side content or code ), "0" otherwise
+* *cldll* - "1" if the mod requires a matching client.dll
+* *type* - If this mod is "multiplayer_only", then the single player buttons ( New Game/Hazard Course/Load game etc.) are disabled in the Half-Life launcher
+* *hlversion* - The version of Half-Life for which the mod was generated. Revisions to Half-Life will require updates by mod authors.
+* *nomodels* - Set to "1" if model bitmaps should not be shown in the Multiplayer | Customize menu of the Half-Life launcher mpentity:	When a user chooses to create a listen server from the interface, each BSP file in the maps\ folder for the mod is searched. The entity data for the BSP is scanned for the presence of the string identified by mpentity. For instance, in Half-Life, the string is "info_player_deathmatch" ( which is also the default if no string is specified )
+* *gamedll* - The game DLL to load for running a server for this mod.
+* *startmap* - When a user chooses "New Game" for a single player mod, this is the map that is loaded.
+* *trainmap* - When a user chooses "Hazard Course" for a single player mod, this is the map that is loaded.
+
 Changing the interface:
 
 A Mod can change all the graphics of the *Half-Life* interface to give the entire game a new look that fits with the theme of the modified game.
