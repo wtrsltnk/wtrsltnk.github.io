@@ -10,7 +10,7 @@ Half-Life has introduced the Custom Game Browser into the interface for people t
 
 Above is a screenshot of the Custom Game Browser. Players visit this screen, click on the "Refresh List" button, and Half-Life then queries a master server to get a list of Half-Life modifications. Installing a mod is as simple as highlighting the mod in the list and clicking the "Install" button. The mod author must set up their mod to be downloadable for this to work correctly.
 
-How to get your mod ( Custom Game ) listed on the WON.net mod master server:
+## How to get your mod ( Custom Game ) listed on the WON.net mod master server:
 
 You must either:
 place your mod on an ftp site which allows anonymous ftp access:
@@ -27,6 +27,7 @@ you must compress your mod into a .zip file that exists on an http ( web) server
 For instance, if I have created a Half-Life mod "Skirmish", I might place it at an http server having the following address:
 
 http://www.valvesoftware.com/mods/skirmish.zip
+
 Thus, www.valvesoftware.com is the server host and skirmish.zip is the file that will be downloaded to install my game. Skirmish.zip will be placed into the game directory of the mod I have downloaded: e.g.: c:\sierra\half-life\skirmish\skirmish.zip.
 
 The Half-Life mod browser knows how to unzip .zip files only. Less preferably, you can create a self-extracting archive ( extension .exe ) and the Half-Life mod browser will execute that .exe after downloading the archive.
@@ -40,6 +41,7 @@ In the ftp directory for the mod, the author must expose the file liblist.gam. T
 Thus, for the above example, I would create the file:
 
 www.valvesoftware.com/pub/downloads/mods/skirmish/liblist.gam
+
 When the Half-Life front end is told to "Install" (i.e., download and place files in the appropriate spots for) a mod, the ftp site listed with the mod master server is scanned for the liblist.gam file before downloading can continue. The existence of liblist.gam validates the mod site.
 
 In addition, you must place your mod's .zip file in the same directory as the liblist.gam. The .zip file must be named gamedir.zip where gamedir is the game directory for your mod.
@@ -136,7 +138,7 @@ Fields of the file liblist.gam:
 * *startmap* - When a user chooses "New Game" for a single player mod, this is the map that is loaded.
 * *trainmap* - When a user chooses "Hazard Course" for a single player mod, this is the map that is loaded.
 
-Changing the interface:
+## Changing the interface:
 
 A Mod can change all the graphics of the *Half-Life* interface to give the entire game a new look that fits with the theme of the modified game.
 
