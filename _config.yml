@@ -1,0 +1,17 @@
+name: wtrsltnk
+
+description: on coding
+
+author: Wouter Saaltink
+
+# The directory for category index pages. Change it to something else if
+# for example you want links like /categories/category1 instead of /category1
+category_dir: /
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.md]
+
+collections:
+  hl_modding_resources:
+    output: true
