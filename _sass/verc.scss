@@ -1,0 +1,26 @@
+html, body {
+  background-color: #eee;
+}
+
+.content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+
+.content p {
+  text-align: justify;
+  text-justify: distribute; 
+}
+
+.content blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+}
+
+.content pre {
+  padding: 10px;
+  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  background-color: #f6f8fa;
+}
