@@ -1,3 +1,12 @@
+---
+layout: verc
+title: Creating New Weapons in the 2.2 SDK
+page.author: Robert Prouse
+page.date: 2002-07-08 05:29pm PDT
+page.categories: [VERC, half-life, coding]
+permalink: /hl_modding_resources/collective.valve-erc.com/Creating New Weapons in the 2.2 SDK.html
+---
+
 > [Mon Jul 08, 2002 / 05:29pm PDT] Robert Prouse
 
 ### Creating New Weapons in the 2.2 SDK
