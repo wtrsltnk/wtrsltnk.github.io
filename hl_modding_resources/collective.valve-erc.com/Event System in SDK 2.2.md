@@ -1,3 +1,11 @@
+---
+layout: verc-page
+title: Event System in SDK 2.2
+page.author: Valve Software 
+page.date: 2002-01-29 04:13pm PST
+page.categories: [VERC, half-life, coding]
+permalink: /hl_modding_resources/collective.valve-erc.com/Event System in SDK 2.2.html 
+---
 > [Tue Jan 29, 2002 / 04:13pm PST] Valve Software
 
 > **HL SDK 2.2**
