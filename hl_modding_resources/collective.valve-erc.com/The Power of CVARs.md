@@ -1,4 +1,13 @@
-# The Power of CVARs!
+---
+layout: verc
+title: The Power of CVARs!
+page.author: Caleb 'Ghoul' Delnay
+page.date: 2002-02-02 02:02am PST
+page.categories: [VERC, half-life, coding]
+permalink: /hl_modding_resources/collective.valve-erc.com/The Power of CVARs.html
+---
+
+#### The Power of CVARs!
 
 > [Sat Feb 02, 2002 / 02:02am PST] Caleb 'Ghoul' Delnay
 
