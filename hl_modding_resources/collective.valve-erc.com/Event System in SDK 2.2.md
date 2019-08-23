@@ -1,10 +1,4 @@
----
-layout: verc-page
-title: Event System in SDK 2.2
-page.author: Valve Software 
-page.date: 2002-01-29 04:13pm PST
-page.categories: [VERC, half-life, coding]
----
+> [Tue Jan 29, 2002 / 04:13pm PST] Valve Software
 
 > **HL SDK 2.2**
 >
@@ -18,7 +12,7 @@ One of the major additions to the SDK is the client event system. The event syst
 
 Events are created in the game .dll by calling ``PRECACHE_EVENT`` with the name of the event script ( .sc ) file, e.g.:
 
-```
+```cpp
 m_usDoorGoUp = PRECACHE_EVENT( 1, "events/door/doorgoup.sc" );
 ```
 
@@ -28,7 +22,7 @@ The first parameter should always be 1 for now. The return value from precaching
 
 In order for the event to be handled by the client.dll, the client.dll must "hook" the named .sc file. This is accomplished in events.cpp of the client.dll source. For example:
 
-```
+```cpp
 gEngfuncs.pfnHookEvent( "events/door/doorgoup.sc", EV_TFC_DoorGoUp );
 ```
 
@@ -42,7 +36,7 @@ Playing back the Event:
 
 The way to invoke an event from the game .dll is to invoke the ``PLAYBACK_EVENT`` or ``PLAYBACK_EVENT_FULL`` API macro or call. ``PLAYBACK_EVENT`` simply invokes ``PLAYBACK_EVENT_FULL`` with all default parameters:
 
-```
+```cpp
 #define PLAYBACK_EVENT( flags, who, index ) \
         PLAYBACK_EVENT_FULL( flags, who, index, 0, \
         (float *)&g;_vecZero, \
@@ -52,7 +46,7 @@ The way to invoke an event from the game .dll is to invoke the ``PLAYBACK_EVENT`
 
 The form for PLAYBACK_EVENT_FULL is:
 
-```
+```cpp
 void PLAYBACK_EVENT_FULL( int flags, 
                           const edict_t *pInvoker, 
                           unsigned short eventindex, float delay, 
@@ -64,7 +58,7 @@ void PLAYBACK_EVENT_FULL( int flags,
 
 Valid flags can be found in event_flags.h in the common source directory and allow for skipping the local host, sending the event reliably - events can be dropped by default --, and updating rather than adding identical events for a particular entity in the queue. Events are generally associated with a particular entity. If so, then the origin and angles will be taken from that entity and don't need to be specified in the playback call. Otherwise, or as an override, you can specify origin and angles in the playback call. The eventindex is simply the value returned when you precached the event. The delay is the amount of time in seconds ( e.g., 0.1 seconds ) to queue up the event on the client before it is fired. The additional fields are for passing event-specific parameters in to the client.dll: two floating point parameters, two integers, and two boolean values. Thus, playing back an event is as simple as invoking PLAYBACK_EVENT_FULL:
 
-```
+```cpp
 PLAYBACK_EVENT_FULL( 0, 
                      m_pPlayer->edict(), 
                      m_usGaussSpin, 
