@@ -1,3 +1,12 @@
+---
+layout: verc
+title: How To Make A Mod
+page.author: Valve Software 
+page.date: 2002-01-29 12:00pm PST
+page.categories: [VERC, half-life, coding]
+permalink: /hl_modding_resources/collective.valve-erc.com/How To Make A Mod.html
+---
+
 > [Tue Jan 29, 2002 / 12:00pm PST] Valve Software 
 
 > **HL SDK 2.2**
