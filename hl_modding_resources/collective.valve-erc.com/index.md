@@ -19,3 +19,7 @@ One of the major additions to the SDK is the client event system. The event syst
 #### [The Power of CVARs!](collective.valve-erc.com\The Power of CVARs.html)
   
 Lets face it, people like to customize things. They like to make things the way they want it. In Half-Life, thats where CVARs step in. CVARs are int varibles managed by the server, one CVAR is mp_teamplay. [Read all](collective.valve-erc.com\The Power of CVARs.html)
+
+#### [Creating New Weapons in the 2.2 SDK](collective.valve-erc.com\Creating New Weapons in the 2.2 SDK.md)
+
+There are plenty of tutorials out there on how to create new weapons, but, while we were working on our mod, Tour of Duty, we found that all of the tutorials were missing some steps that you must take, didn't explain how things like weapon accuracy are adjusted, and most importantly, none explained how to get client side prediction working in the 2.2 SDK. Judging by the number of posts I see on the mailing lists, client side events are causing a lot of problems. [Read all](collective.valve-erc.com\Creating New Weapons in the 2.2 SDK.html)
